@@ -1,0 +1,13 @@
+class Demo
+ {
+    public static void main(String[] args)
+     {
+        System.out.println("Here's our first program");
+        System.out.println("studyopedia.com - Never Stop Learning");
+    }
+}
+
+Output
+
+ere's our first program
+studyopedia.com - Never Stop Learning
