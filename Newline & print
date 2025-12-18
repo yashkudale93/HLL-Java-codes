@@ -1,0 +1,42 @@
+1]
+class Firstclass {
+    public static void main(String[] args) {
+        System.out.println("Hello World");
+    } 
+}
+
+Output
+
+Hello World
+
+2] How to move to the next line ?
+public class nextln {
+    public static void main(String[] args) {
+        System.out.println("Hello World with java");
+        System.out.println("Hello world with java");
+        System.out.print("Hello World with java");
+    }
+}
+
+Output
+
+Hello world with java
+Hello world with java
+Hello world with java
+
+3] How to move to next line ? DIFFERENT STEP
+package next;
+
+public class n {
+     public static void main(String[] args) {
+        System.out.print("Hello World with java\n");
+        System.out.print("Hello world with java\n");
+        System.out.print("Hello World with java");
+    }
+}
+
+Output
+
+Hello World with java
+Hello world with java
+Hello World with java
