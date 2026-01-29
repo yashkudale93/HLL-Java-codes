@@ -1,0 +1,55 @@
+public class multi {
+    public static void main(String[] args) {
+        //variables
+        int a = 10;
+        int b = 25;
+        int sum = a + b;
+        //System.out.println(sum);
+        int multi = a * b;
+        System.out.println(multi);
+    }
+}
+Output
+  250
+
+  public class Add {
+    public static void main(String[] args) {
+        //variables
+        int a = 10;
+        int b = 25;
+        int sum = a + b;
+        //System.out.println(sum);
+        int add = a + b;
+        System.out.println(add);
+    }
+}
+Output
+  35
+
+   public class sub {
+    public static void main(String[] args) {
+        //variables
+        int a = 10;
+        int b = 25;
+        int sum = a + b;
+        //System.out.println(sum);
+        int sub = a - b;
+        System.out.println(sub);
+    }
+}
+Output
+  -15
+
+   public class div {
+    public static void main(String[] args) {
+        //variables
+        int a = 10;
+        int b = 25;
+        int sum = a + b;
+        //System.out.println(sum);
+        int div = b / a;
+        System.out.println(div);
+    }
+}
+Output
+  2
