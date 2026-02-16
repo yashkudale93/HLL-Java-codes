@@ -123,27 +123,48 @@ output
 ****
 
 
-                                                   Home work
+                                                   Home work ( solid rhombus )
 public class print {
     public static void main(String[] args) {
-        int n = 5;
-        int m = 5;
+      //  int n = 5;
+      //  int m = 5;
 
-        //outer loopp
-        for(int i=1; i<=n; i++) {
-            // inner loop -> space print
-            for(int j=1; j<=m-i; j++){
+      //  //outer loopp
+      //  for(int i=1; i<=n; i++) {
+      //      // inner loop -> space print
+      //      for(int j=1; j<=m-i; j++){
+      //          System.out.print(" ");
+      //      }
+
+      //      //inner loop -> star print
+      //      for(int j=1; j<=m; j++) {
+      //          System.out.print("*");
+      //      }
+      //      System.out.println();
+        }
+    }
+}                  
+              [ Or ]
+                     
+public class print {
+  public static void main(String[] args) {
+        int n = 5;
+
+        for(int i=1; i<=n; i++){
+            //space
+            for(int j=1; j<=n-i; j++){
                 System.out.print(" ");
             }
 
-            //inner loop -> star print
-            for(int j=1; j<=m; j++) {
+            //stars
+            for(int j=1; j<=5; j++){
                 System.out.print("*");
             }
             System.out.println();
         }
     }
 }    
+
 output
     *****
    *****
@@ -151,6 +172,66 @@ output
  *****
 *****          
 
+
+
+                                                           Advanced pattern
+public class print {
+  public static void main(String[] args) {
+        int n = 5;
+
+        // upeer half
+        for (int i=1; i<=n; i++){
+            //1st part
+            for(int j=1; j<=i; j++){
+                System.out.print("*");
+            }
+
+            //spaces
+            int spaces = 2 * (n-i);
+            for(int j=1; j<=spaces; j++){
+                System.out.print(" ");
+            }
+
+            //2nd part
+            for(int j=1; j<=i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        //lower half
+        for(int i=n; i>=1; i--){
+            //1st part
+            for(int j=1; j<=i; j++){
+                System.out.print("*");
+            }
+
+            //spaces
+            int spaces = 2 * (n-i);
+            for(int j=1; j<=spaces; j++){
+                System.out.print(" ");
+            }
+
+            //2nd part
+            for(int j=1; j<=i; j++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+    }
+}    
+Output
+*        *
+**      **
+***    ***
+****  ****
+**********
+**********
+****  ****
+***    ***
+**      **
+*        *
 
 
 
