@@ -76,4 +76,21 @@ Greater number =11
 
 Q 4] Write a function that takes in the radius as input and returns the circumference of a circle.
 
+import java.util.Scanner;
 
+public class Circle {
+    public static double circumference(double r) {
+        return 2 * Math.PI * r;
+    } 
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double r = sc.nextDouble();
+
+
+        System.out.println("Circumference ="+ circumference(r));
+    }
+}
+output
+21
+Circumference =131.94689145077132
