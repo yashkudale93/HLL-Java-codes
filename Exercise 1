@@ -94,3 +94,44 @@ public class Circle {
 output
 21
 Circumference =131.94689145077132
+
+
+Q 5] Write a function that takes in age as input and returns if that person is eligible to vote or not. A person of age > 18 is eligible to vote.
+
+import java.util.Scanner;
+
+public class VoteCheck {
+    public static String isEligible(int age) {
+        if(age > 18)
+            return "Eligible to Vote";
+        else
+            return "Not Eligible to Vote";
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int age = sc.nextInt();
+
+        System.out.println(isEligible(age));
+    }
+}
+
+Output
+21
+Eligible to Vote
+11
+Not Eligible to Vote
+
+
+
+Q 6] Write an infinite loop using do while condition.
+
+public class InfiniteLoop {
+    public static void main(String[] args) {
+        do {
+            System.out.println("Infinite Loop Running...");
+        } while(true);
+    }
+}
+Output
+Infinite
