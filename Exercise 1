@@ -135,3 +135,80 @@ public class InfiniteLoop {
 }
 Output
 Infinite
+
+
+
+
+Q 7] Write a program to enter the numbers till the user wants and at the end it should display the count of positive, negative and zeros entered.
+
+import java.util.Scanner;
+
+public class NumberCounter {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int positive = 0, negative = 0, zero = 0;
+        char choice;
+
+        do {
+            int num = sc.nextInt();
+
+            if(num > 0)
+                positive++;
+            else if(num < 0)
+                negative++;
+            else
+                zero++;
+
+            System.out.println("Do you want to continue? (y/n)");
+            choice = sc.next().charAt(0);
+
+        } while(choice == 'y' || choice == 'Y');
+
+        System.out.println("Positive: " + positive);
+        System.out.println("Negative: " + negative);
+        System.out.println("Zero: " + zero);
+    }
+}
+Output
+5
+Do you want to continue? (y/n)
+y
+-3
+Do you want to continue? (y/n)
+y
+0
+Do you want to continue? (y/n)
+y
+21
+Do you want to continue? (y/n)
+n
+Positive: 2
+Negative: 1
+Zero: 1
+
+
+Q 8]  Two numbers are entered by the user, x and n. Write a function to find the value of one number raised to the power of another i.e. xn.
+
+import java.util.Scanner;
+
+public class PowerFunction {
+    public static long power(int x, int n) {
+        long result = 1;
+        for(int i = 1; i <= n; i++) {
+            result *= x;
+        }
+        return result;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int x = sc.nextInt();
+        int n = sc.nextInt();
+
+        System.out.println(power(x, n));
+    }
+}
+output
+2
+3
+8
